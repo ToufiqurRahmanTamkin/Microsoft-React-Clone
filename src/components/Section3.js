@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import data from '../data/section2'
+import data from '../data/section3'
 
 const Section2 = () => {
   const [cards, setCards] = useState(data)
 
   return (
     <section className="section-2 md:grid grid-cols-2 xl:grid-cols-4 xl:mx-20">
+      {/* <h2 className="font-semibold text-2xl mt-5 px-8">For business</h2> */}
       {cards.map((card) => {
         const { id, image, title, desc, link } = card
 
